@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.prateek.bottom_navigation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cyllidelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".quiz.QuizRulesActivity"></activity>
+        <activity android:name=".Contests.testPortfolioActivity" />
+        <activity android:name=".Contests.ContestLeaderboard" />
+        <activity android:name=".quiz.QuizWaitingActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".quiz.QuizActivityTest" />
+        <activity
+            android:name=".Contests.WeeklyActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".stories.NewsData" />
+        <activity android:name=".stories.StoriesActivity" />
+        <activity android:name=".quiz.QuizActivity" />
+        <activity android:name=".quiz.StartingScreenActivity" />
+        <activity android:name=".Portfolio.PortfolioActivity" />
+        <activity android:name=".Portfolio.MyPortfolio" />
+        <activity
+            android:name=".Profile_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".faq_view.Faq_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".stories.StoryPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".stories.NewsPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Charts.ChartActivity" />
+    </application>
+
+</manifest>

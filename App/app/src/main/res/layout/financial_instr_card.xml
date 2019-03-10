@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:id="@+id/stockcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:textSize="16dp"
+                android:text="HINDALCO"
+                android:gravity="center_vertical"
+                android:id="@+id/stockName"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textSize="16dp"
+                android:text="156.82(+3.8%)"
+                android:gravity="center"
+                android:id="@+id/stockValue"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandablepositionoptions"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:el_duration="800"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/purchasebtn"
+            android:src="@drawable/ic_add_position"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/stats_icon"
+                android:id="@+id/analyzebtn"
+                />
+
+
+        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+</LinearLayout>
